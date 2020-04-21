@@ -1,6 +1,15 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
-<p>This is the value of the property allowNewServer at this moment using StringInterpolation: {{ allowNewServer }}</p>
-<p>This is the value of the property allowNewServer at this moment using Property Binding: <span [innerText]="allowNewServer"></span></p>
+<button class="btn btn-primary" (click)="onCreateServer()" [disabled]="!allowNewServer">
+  Add Server
+</button>
+<p>
+  This is the value of the property allowNewServer at this moment using StringInterpolation: {{ allowNewServer }}
+</p>
+<p>
+  This is the value of the property allowNewServer at this moment using Property Binding: <span [innerText]="allowNewServer"></span>
+</p>
+<p>
+  This is the value of the property serverCreationStatus at this moment using StringInterpolation: {{ serverCreationStatus }}
+</p>
 <hr />
 <app-server></app-server>
 <hr />
