@@ -1,5 +1,8 @@
 <label>Server Name</label>
+<label>With Event Binding</label>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)" />
+<label>With Two-Way-Binding</label>
+<input type="text" class="form-control" [(ngModel)]="serverName" />
 <p>
   This is the value of the property serverName at this moment using StringInterpolation: <span style="font-weight:bold">{{ serverName }}</span>
 </p>
