@@ -19,6 +19,9 @@
 <p>
   This is the value of the property serverCreationStatus at this moment using StringInterpolation: {{ serverCreationStatus }}
 </p>
+<p *ngIf="serverCreated">
+  This is shown by the directive ngIf. Server was created, server name is {{ serverName }}
+</p>
 <hr />
 <app-server></app-server>
 <hr />
