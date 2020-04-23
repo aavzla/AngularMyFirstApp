@@ -1,3 +1,7 @@
-<p [ngStyle]="{backgroundColor: getColor() }">The {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}.</p>
+<p
+   [ngStyle]="{backgroundColor: getColor() }"
+   [ngClass]="{online: serverStatus === 'online'}">
+  The {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}.
+</p>
 <p>The property person is an object and when you use it directly, it shows this '{{ person }}'.</p>
 <p>And, when we use the pipe with json, the property contains this '{{ person | json }}'.</p>
