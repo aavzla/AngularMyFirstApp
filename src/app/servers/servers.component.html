@@ -27,7 +27,7 @@
     This is shown by the directive ngIf Else. No server was created.
   </p>
 </ng-template>
-<hr />
-<app-server></app-server>
-<hr />
-<app-server></app-server>
+<div *ngFor="let server of servers">
+  <hr />
+  <app-server></app-server>
+</div>
